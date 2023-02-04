@@ -1,0 +1,295 @@
+:root{
+    --azul: #0833a2;
+    --fondo:  #FFFFFF;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--fondo);
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    padding: 30px 0;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: var(--azul);
+    font-size: 40px;
+}
+
+header nav a{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: #181bb8;
+
+}
+.Cajadcto{
+    width:1000px;
+    margin-left: 400px;
+    height: 70px;
+    background-color: rgba(11, 69, 124, 0.5);
+}
+
+.dcto{
+    text-align: center;
+    left: 27px;
+   color: white;
+
+    
+}
+.logoEmpresa{
+    width: 150px;
+    height: 150px;
+}
+
+.publicidad-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0, 0, 0, 0.50) 100%), url(../img/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.publicidad-principal .contenedor{
+    
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.app{
+position: relative;
+width: 100%;
+height:100%;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.img1{
+width: 100px;
+height: 100px;
+border-radius:50% ;
+animation-name: girarb;
+animation-duration:1.5s ;
+animation-iteration-count: infinite ;
+animation-timing-function: linear;
+display: inline-block;
+}
+
+
+@keyframes girarb {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg) ;
+    }
+}
+
+.title{
+    text-decoration: none;
+    
+}
+
+.title h1:hover {
+    color: rgb(45, 18, 139);
+}
+
+.conte_parent{
+    position: relative;
+}
+.conte{
+    height: 510px;
+    width: 25%;
+    box-shadow: 0 0 7px #111111;
+    margin: 50px 30px;
+    float: left;
+    background-color: white;
+}
+
+.conte .card{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+.card img{
+    margin: auto;
+    display: block;
+}
+.evee img{
+    height: 330px;
+    width: 330px;
+}
+.control img{
+    height: 330px;
+    width: 330px;
+}
+.amiibo img{
+    height: 330px;
+    width: 330px;
+}
+
+.conte .evee{
+    background-color: #c2c5c3;
+}
+
+.conte .control{
+    background-color: #bbd4fa;
+}
+.conte .amiibo{
+    background-color: #e9c3ff;
+}
+
+.info{
+    height: 80px;
+    width: 100%;
+}
+
+.info h1{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: -10px;
+}
+
+.info p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .9em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.precio{
+    height:50px;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-precio{
+    width: 80px;
+}
+
+.precio1{
+    color: red;
+    font-size: .8em;
+}
+.precio .precio2{
+    font-size: 1.5em;
+}
+.shoping{
+    font-size: 1.5em;
+    color: #555;
+}
+
+
+
+.footer{
+    background-color: #dce3eb;
+    width: 100%;   
+    
+}
+
+.footer .group1{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.footer .group1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .group1 .box figure img{
+    width: 200px;
+}
+
+.footer .group1 .box h2{    
+    color: rgb(15, 15, 15);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .group1 .box p{
+    color: rgb(99, 94, 94);
+    margin-bottom: 10px;
+}
+
+.footer .group1 .rrss a{
+    display: inline-block;
+    text-decoration: none ;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color:dce3eb;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer .group1 .rrss a:hover{
+    color: #0909f5;
+}
+
+.footer .group2{
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(136, 138, 138);
+    
+}
+
+@media screen and (max-width:800px) {
+    .footer .group1{
+        width: 90%;
+        grid-template-columns:repeat(1, 1fr) ;
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    
+}
