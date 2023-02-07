@@ -1,32 +1,37 @@
-:root{
+:root {
     --azul: #0833a2;
-    --fondo:  #FFFFFF;
+    --fondo: #FFFFFF;
 }
 
-*{
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background: var(--fondo);
     font-family: 'Roboto', sans-serif;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    
+
+
+
 }
 
-.contenedor{
+.contenedor {
     width: 90%;
     margin: auto;
 }
 
-header{
+header {
     padding: 30px 0;
+
+
 }
 
-header .contenedor{
+header .contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,9 +42,10 @@ header .logotipo {
     font-weight: normal;
     color: var(--azul);
     font-size: 40px;
+    justify-content: flex-start;
 }
 
-header nav a{
+header nav a {
     color: rgb(41, 41, 41);
     text-decoration: none;
     margin-right: 20px;
@@ -48,32 +54,18 @@ header nav a{
 header nav a:hover,
 header nav a.activo {
     color: #181bb8;
-
-}
-.Cajadcto{
-    width:1000px;
-    margin-left: 400px;
-    height: 70px;
-    background-color: rgba(11, 69, 124, 0.5);
 }
 
-.dcto{
-    text-align: center;
-    left: 27px;
-   color: white;
-
-    
-}
-.logoEmpresa{
+.logoEmpresa {
     width: 150px;
     height: 150px;
 }
 
-.publicidad-principal{
+.publicidad-principal {
     font-size: 16px;
     min-height: 40.62em;
     color: #fff;
-    background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0, 0, 0, 0.50) 100%), url(../img/hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, 0.50) 100%), url(../img/hero.jpg);
     background-position: center center;
     background-size: cover;
     margin-bottom: 3.12em;
@@ -81,104 +73,123 @@ header nav a.activo {
     align-items: end;
 }
 
-.publicidad-principal .contenedor{
-    
+.publicidad-principal .contenedor {
+
     margin: 0 auto;
     margin-bottom: 6.25em;
 }
 
-.app{
-position: relative;
-width: 100%;
-height:100%;
-justify-content: center;
-align-items: center;
-display: flex;
-margin-top: 100px;
-margin-bottom: 100px;
+.app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.img1{
-width: 100px;
-height: 100px;
-border-radius:50% ;
-animation-name: girarb;
-animation-duration:1.5s ;
-animation-iteration-count: infinite ;
-animation-timing-function: linear;
-display: inline-block;
+.img1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: girarb;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
 }
 
-
+/*Productos*/
 @keyframes girarb {
-    from{
+    from {
         transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg) ;
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
 
-.title{
+.Productos__title {
+    display: flex;
+    justify-content: center;
+    color: #26125e;
+    margin-bottom: 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+.conte {
+    height: 510px;
+    width: 25%;
+    box-shadow: 0 0 7px #111111;
+    margin: 50px 30px;
+    background-color: white;
+
+}
+
+.conte .card {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+.card img {
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+
+.evee img {
+    height: 330px;
+    width: 330px;
+}
+
+.control img {
+    height: 330px;
+    width: 330px;
+}
+
+.amiibo img {
+    height: 330px;
+    width: 330px;
+}
+
+
+.title {
     text-decoration: none;
-    
+
 }
 
 .title h1:hover {
     color: rgb(45, 18, 139);
 }
 
-.conte_parent{
-    position: relative;
-}
-.conte{
-    height: 510px;
-    width: 25%;
-    box-shadow: 0 0 7px #111111;
-    margin: 50px 30px;
-    float: left;
-    background-color: white;
-}
-
-.conte .card{
-    height: 200px;
-    width: 100%;
-    margin-bottom: 170px;
-}
-
-.card img{
-    margin: auto;
-    display: block;
-}
-.evee img{
-    height: 330px;
-    width: 330px;
-}
-.control img{
-    height: 330px;
-    width: 330px;
-}
-.amiibo img{
-    height: 330px;
-    width: 330px;
-}
-
-.conte .evee{
+.conte .evee {
     background-color: #c2c5c3;
 }
 
-.conte .control{
+.conte .control {
     background-color: #bbd4fa;
 }
-.conte .amiibo{
+
+.conte .amiibo {
     background-color: #e9c3ff;
 }
 
-.info{
+.info {
     height: 80px;
     width: 100%;
 }
 
-.info h1{
+.info h1 {
     font-family: sans-serif;
     font-size: 1.2em;
     text-align: center;
@@ -186,7 +197,7 @@ display: inline-block;
     margin-bottom: -10px;
 }
 
-.info p{
+.info p {
     text-align: center;
     font-family: sans-serif;
     font-size: .9em;
@@ -194,8 +205,8 @@ display: inline-block;
     color: #555;
 }
 
-.precio{
-    height:50px;
+.precio {
+    height: 50px;
     width: 85%;
     margin: auto;
     font-family: sans-serif;
@@ -204,41 +215,209 @@ display: inline-block;
     align-items: center;
 }
 
-.box-precio{
+.box-precio {
     width: 80px;
 }
 
-.precio1{
+.precio1 {
     color: red;
     font-size: .8em;
 }
-.precio .precio2{
+
+.precio .precio2 {
     font-size: 1.5em;
 }
-.shoping{
+
+.shoping {
     font-size: 1.5em;
     color: #555;
 }
 
-
-
-.footer{
-    background-color: #dce3eb;
-    width: 100%;   
-    
+/*Tiendas*/
+.container__tiendas {
+    background-size: cover;
+    height: 450px;
+    width: 50%;
+    position: relative;
+    left: 450px;
 }
 
-.footer .group1{
+.title__tiendas h2 {
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.ubicaciones a {
+    text-decoration: none;
+    margin-top: 30px;
+
+}
+
+.ubicaciones a:hover {
+    color: #3853cf;
+
+}
+
+/*preguntas*/
+
+.contenedor__acordeon {
+    width: 50%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contenedor__acordeon h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+
+}
+
+.acordeon {
+    background-color: #fff;
+
+}
+
+.acordeon label {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #111111;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    transition: all 300ms ease;
+}
+
+.acordeon label:hover {
+    background: #26125e;
+}
+
+.acordeon .contenido-acordeon {
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-acordeon:checked~.contenido-acordeon {
+    max-height: 600px;
+    padding: 15px 0px;
+}
+
+.btn-acordeon {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .contenedor-acordeon {
+        width: 90%;
+    }
+}
+
+
+/*Contacto*/
+.form {
+    width: 340px;
+    height: 440px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #313131;
+    margin: calc(20vh - 220px)auto;
+    padding: 20px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+    
+    margin-bottom: 100px;
+}
+
+.form h2{
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    border-bottom: 3px solid black;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border: 0;
+    font-family: sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid grey;
+}
+
+.form input:focus{
+    border-bottom: 2px solid lightblue;
+}
+
+.form p:before{
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.form button{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: sans-serif;
+    border: 2px;
+    background: 0;
+    color: #000;
+    transition: all .3s;
+}
+
+.form button:hover{
+    background: rgb(44, 104, 214);
+    color: #dce3eb;
+}
+
+.form div{
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: #000;
+    color: white;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 12px;
+    box-shadow: 10px 10px 40px -14px #000;
+}
+
+.form span{
+    margin:0 15px  15px;
+}
+/* Footer */
+.footer {
+    background-color: #dce3eb;
+    width: 100%;
+
+}
+
+.footer .group1 {
     width: 100%;
     max-width: 1400px;
     margin: auto;
     display: grid;
-    grid-template-columns:repeat(3, 1fr) ;
-    grid-gap:50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
     padding: 45px 0px;
 }
 
-.footer .group1 .box figure{
+.footer .group1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
@@ -246,50 +425,51 @@ display: inline-block;
     align-items: center;
 }
 
-.footer .group1 .box figure img{
+.footer .group1 .box figure img {
     width: 200px;
 }
 
-.footer .group1 .box h2{    
+.footer .group1 .box h2 {
     color: rgb(15, 15, 15);
     margin-bottom: 25px;
     font-size: 20px;
 }
 
-.footer .group1 .box p{
+.footer .group1 .box p {
     color: rgb(99, 94, 94);
     margin-bottom: 10px;
 }
 
-.footer .group1 .rrss a{
+.footer .group1 .rrss a {
     display: inline-block;
-    text-decoration: none ;
+    text-decoration: none;
     width: 45px;
     height: 45px;
     line-height: 45px;
     margin-right: 10px;
-    background-color:dce3eb;
+    background-color: dce3eb;
     color: rgb(10, 10, 10);
     text-align: center;
     transition: all 300ms ease;
 }
-.footer .group1 .rrss a:hover{
+
+.footer .group1 .rrss a:hover {
     color: #0909f5;
 }
 
-.footer .group2{
+.footer .group2 {
     padding: 15px 10px;
     text-align: center;
     color: rgb(136, 138, 138);
-    
+
 }
 
 @media screen and (max-width:800px) {
-    .footer .group1{
+    .footer .group1 {
         width: 90%;
-        grid-template-columns:repeat(1, 1fr) ;
-        grid-gap:30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
         padding: 35px 0px;
     }
-    
+
 }
