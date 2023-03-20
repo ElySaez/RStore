@@ -92,47 +92,19 @@ header {
   .conte .card {
     height: 200px;
     width: 100%;
-    margin-bottom: 170px; }
-  .conte .evee {
-    background-color: #c2c5c3; }
-  .conte .control {
-    background-color: #bbd4fa; }
-  .conte .amiibo {
+    margin-bottom: 170px;
+    background-color: ""; }
+  .conte .cardrose {
     background-color: #e9c3ff; }
-  .conte .theLast {
-    background-color: #9dd1c4; }
-  .conte .consolaPS5 {
-    background-color: #1a25b3; }
-  .conte .audifonosXbox {
+  .conte .cardgray {
+    background-color: #c9cfcf; }
+  .conte .cardgreenlight {
     background-color: #6feb36; }
 
 .card img {
   margin: auto;
-  width: 100%; }
-
-.evee img {
-  height: 330px;
-  width: 330px; }
-
-.control img {
-  height: 330px;
-  width: 330px; }
-
-.amiibo img {
-  height: 330px;
-  width: 330px; }
-
-.theLast img {
-  height: 330px;
-  width: 330px; }
-
-.consolaPS5 img {
-  height: 330px;
-  width: 330px; }
-
-.audifonosXbox img {
-  height: 330px;
-  width: 330px; }
+  width: 100%;
+  height: 330px; }
 
 .title {
   text-decoration: none; }

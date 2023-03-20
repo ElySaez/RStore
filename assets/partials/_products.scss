@@ -1,4 +1,9 @@
-
+$color:"";
+$colors:(
+	rose: #e9c3ff,
+	gray: #c9cfcf,
+	greenlight:#6feb36
+);
 .img1 {
 	width: 100px;
 	height: 100px;
@@ -23,68 +28,25 @@
 		height: 200px;
 		width: 100%;
 		margin-bottom: 170px;
+		background-color: $color;
 	}
-	.evee {
-		background-color: $background-color_2;
+	@each $name, $valor in $colors {
+		.card#{$name}{
+			background-color: $valor;
+		}
 	}
-	.control {
-		background-color: $background-color_3;
-	}
-	.amiibo {
-		background-color: $background-color_4;
-	}
-	.theLast {
-		background-color: $background-color_5;
-	}
-	.consolaPS5 {
-		background-color: $background-color_6;
-	}
-	.audifonosXbox {
-		background-color: $background-color_7;
-	}
+	
 }
 .card {
 	img {
 		margin: auto;
 		width: 100%;
-	}
-}
-.evee {
-	img {
 		height: 330px;
-		width: 330px;
+		
 	}
 }
-.control {
-	img {
-		height: 330px;
-		width: 330px;
-	}
-}
-.amiibo {
-	img {
-		height: 330px;
-		width: 330px;
-	}
-}
-.theLast {
-	img {
-		height: 330px;
-		width: 330px;
-	}
-}
-.consolaPS5 {
-	img {
-		height: 330px;
-		width: 330px;
-	}
-}
-.audifonosXbox {
-	img {
-		height: 330px;
-		width: 330px;
-	}
-}
+
+
 .title {
 	text-decoration: none;
 	h1 {
@@ -133,3 +95,4 @@
 	font-size: 1.5em;
 	color: $color_8;
 }
+
