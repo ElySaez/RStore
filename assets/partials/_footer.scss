@@ -1,0 +1,55 @@
+.footer {
+	background-color: $background-color_10;
+	width: 100%;
+	.group1 {
+		width: 100%;
+		max-width: 1400px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+		padding: 45px 0px;
+		.box {
+			figure {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: 200px;
+				}
+			}
+			h2 {
+				color: $color_15;
+				margin-bottom: 25px;
+				font-size: 20px;
+			}
+			p {
+				color: $color_16;
+				margin-bottom: 10px;
+			}
+		}
+		.rrss {
+			a {
+				text-decoration: none;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				margin-right: 10px;
+				background-color: $background-color_10;
+				color: $color_17;
+				text-align: center;
+				transition: all 300ms ease;
+				&:hover {
+					color: $color_18;
+				}
+			}
+		}
+	}
+	.group2 {
+		padding: 15px 10px;
+		text-align: center;
+		color: $color_19;
+	}
+}

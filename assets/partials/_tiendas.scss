@@ -1,0 +1,27 @@
+.space {
+	margin-bottom: 5%;
+	margin-top: 2%;
+}
+.container__tiendas {
+	background-size: cover;
+	height: 450px;
+	width: 50%;
+	position: relative;
+	left: 450px;
+}
+.title__tiendas {
+	h2 {
+		font-size: 2rem;
+		margin-top: 100px;
+		margin-bottom: 10px;
+	}
+}
+.ubicaciones {
+	a {
+		text-decoration: none;
+		margin-top: 30px;
+		&:hover {
+			color: $color_10;
+		}
+	}
+}
