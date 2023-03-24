@@ -94,6 +94,7 @@ header nav a.activo {
     height: 200px;
     width: 100%;
     margin-bottom: 170px;
+    border-radius: 1px;
     background-color: ""; }
   .conte .cardrose {
     background-color: #e9c3ff; }
