@@ -16,17 +16,33 @@
 
 <body>
     <header>
-        <div class="contenedor">
-            <a href="../index.html"><img class="logoEmpresa" src="../img/LogoRata.png" alt=""></a>
-            <nav>
-                <a href="../index.html" >Inicio</a>
-                <a href="./productos.html">Productos</a>
-                <a href="./tiendas.html">Tiendas</a>
-                <a href="./preguntas.html" class="activo">Preguntas frecuentes</a>
-                <a href="./contacto.html">Contacto</a>
-
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="logoEmpresa" src="../img/LogoRata.png" alt="Rata Store"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">I n i c i o</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">P r o d u c t o s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tiendas.html">T i e n d a s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link activo" href="./preguntas.html">P r e g u n t a s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./contacto.html">C o n t a c t o</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container space">
@@ -55,16 +71,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                     aria-controls="panelsStayOpen-collapseTwo">
-                                    Pregunta 2
+                                    2.-Sí llamo por teléfono o me contacto directamente, ¿podré obtener algún descuento?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingTwo">
                                 <div class="accordion-body">
-                                    <strong>Esta es la respuesta </strong>Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Veritatis, et sequi? Laudantium, sit perspiciatis deserunt ad qui
-                                    accusamus doloremque officia perferendis iste? Aliquam sunt, facere officiis at
-                                    suscipit consectetur architecto.
+                                    <strong>No</strong>, Los precios publicados son nuestros mejores valores y sólo se aplican los descuentos electrónicos con códigos válidos de alguna promoción. Si llamas o te comunicas por email no obtendrás una atención distinta a la que recibe todo el resto de los clientes.
                                 </div>
                             </div>
                         </div>
@@ -73,16 +86,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                     aria-controls="panelsStayOpen-collapseThree">
-                                    Pregunta 3
+                                    3.-¿Puedo pagar con moneda extranjera?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingThree">
                                 <div class="accordion-body">
-                                    <strong>Esta es la respuesta </strong>Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Veritatis, et sequi? Laudantium, sit perspiciatis deserunt ad qui
-                                    accusamus doloremque officia perferendis iste? Aliquam sunt, facere officiis at
-                                    suscipit consectetur architecto.
+                                    <strong>No</strong>, Todas las operaciones de RStore son en pesos chilenos ($).
                                 </div>
                             </div>
                         </div>

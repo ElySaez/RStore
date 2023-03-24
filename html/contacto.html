@@ -16,25 +16,39 @@
 
 <body>
     <header>
-
-        <div class="contenedor">
-            <a href="../index.html"><img class="logoEmpresa" src="../img/LogoRata.png" alt=""></a>
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="./productos.html">Productos</a>
-                <a href="./tiendas.html">Tiendas</a>
-                <a href="./preguntas.html">Preguntas frecuentes</a>
-                <a href="./contacto.html" class="activo">Contacto</a>
-
-            </nav>
-        </div>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="logoEmpresa" src="../img/LogoRata.png" alt="Rata Store"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">I n i c i o</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">P r o d u c t o s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tiendas.html">T i e n d a s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./preguntas.html">P r e g u n t a s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link activo" href="./contacto.html">C o n t a c t o</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="container space">
             <div class="row fo">
               <div class="col-md-12">
-                <h1 class="text-center">Formulario de Contacto con <strong>Rstore</strong></h1>
+                <h1 class="text-center space">Formulario de Contacto con <strong>Rstore</strong></h1>
                 
               <!--   <p class="text-danger small">Todos los campos son obligatorios</p>
                 <p class="bg-success alert-jrc" id="mensajeExito">Mensaje enviado con exito</p>
