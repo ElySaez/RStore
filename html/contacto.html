@@ -31,24 +31,36 @@
 
     </header>
     <main>
-
-        <form class="form form-group">
-            <h2>Contacto</h2>
-            <p type="Nombre:"><input placeholder="Indique su nombre completo"></p>
-            <p type="E-mail:"><input placeholder="Indique su correo electrónico"></p>
-            <p type="Mensaje:"><input placeholder="Mensaje"></p>
-
-            <button>Enviar mensaje</button>
-
-            <div>
-                <span class="fa fa-phone"></span>44444444
-                <span class="fa fa-envelope-o"></span>contacto@Rplay.com
+        <div class="container">
+            <div class="row fo">
+              <div class="col-md-12">
+                <h1>Formulario de Contacto con <strong>Rstore</strong></h1>
+                <hr class="divisor">
+              <!--   <p class="text-danger small">Todos los campos son obligatorios</p>
+                <p class="bg-success alert-jrc" id="mensajeExito">Mensaje enviado con exito</p>
+                <p class="bg-danger alert-jrc" id="mensajeError"></p> -->
+                <form id="jrcForm">
+                  <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" value="" id="nombre">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" class="form-control" name="asunto" value="" id="asunto">
+                  </div>
+                  <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary space">Enviar</button>
+                </form>
+              </div>
             </div>
-        </form>
-
-
-
-
+          </div>
 
     </main>
     <footer class="footer">
@@ -67,15 +79,7 @@
                             <h2>Sobre Nosotros</h2>
                             <p>Somos una tienda online de videojuegos creada por un grupo de entusiastas de los videojuegos que querían hacer que la compra de juegos fuera más fácil y accesible para los jugadores de todo el mundo. Ofrecemos una amplia selección de juegos de diferentes géneros y plataformas, desde los clásicos hasta las últimas novedades, todos a precios competitivos y con un servicio de entrega rápido y confiable.</p>
                         </div>
-                        <!-- <div class="box">
-                            <h2>Siguenos</h2>
-                            <div class="rrss">
-                                <a href="#" class="icon fa fa-github"></a>
-                                <a href="#" class="icon fa fa-instagram"></a>
-                                <a href="#" class="icon fa fa-youtube"></a>
-                                <a href="#" class="icon fa fa-linkedin"></a>
-                            </div>
-                        </div> -->
+        
                         <div class="container p-4 pb-0">
                             <!-- Section: Social media -->
                             <section class="mb-4">

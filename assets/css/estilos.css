@@ -14,30 +14,31 @@ body {
   width: 90%;
   margin: auto; }
 
-header {
-  padding: 30px 0; }
-  header .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  header .logotipo {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: normal;
-    color: var(--azul);
-    font-size: 40px;
-    justify-content: flex-start; }
-  header nav a {
-    color: #292929;
-    text-decoration: none;
-    margin-right: 20px; }
-    header nav a:hover {
-      color: #181bb8; }
-  header nav a.activo {
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header .logotipo {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  color: var(--azul);
+  font-size: 40px;
+  justify-content: flex-start; }
+
+header nav a {
+  color: #292929;
+  text-decoration: none;
+  margin-right: 20px; }
+  header nav a:hover {
     color: #181bb8; }
 
+header nav a.activo {
+  color: #181bb8; }
+
 .logoEmpresa {
-  width: 150px;
-  height: 150px; }
+  width: 140px;
+  height: 140px; }
 
 .publicidad-principal {
   font-size: 16px;
@@ -206,68 +207,6 @@ header {
   .btn-acordeon:checked ~ .contenido-acordeon {
     max-height: 600px;
     padding: 15px 0px; }
-
-.form {
-  width: 340px;
-  height: 440px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 40px -10px #313131;
-  margin: calc(40vh - 220px) auto;
-  padding: 20px 30px;
-  max-width: calc(100vw -40px);
-  box-sizing: border-box;
-  font-family: sans-serif;
-  position: relative;
-  margin-bottom: 100px; }
-  .form h2 {
-    margin: 10px 0;
-    padding-bottom: 10px;
-    width: 180px;
-    border-bottom: 3px solid black; }
-  .form input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    resize: none;
-    border: 0;
-    font-family: sans-serif;
-    transition: all .3s;
-    border-bottom: 2px solid grey; }
-    .form input:focus {
-      border-bottom: 2px solid lightblue; }
-  .form p:before {
-    content: attr(type);
-    display: block;
-    margin: 28px 0 0;
-    font-size: 14px;
-    color: gray; }
-  .form button {
-    float: right;
-    padding: 8px 12px;
-    margin: 8px 0 0;
-    font-family: sans-serif;
-    border: 2px;
-    background: 0;
-    color: #000;
-    transition: all .3s; }
-    .form button:hover {
-      background: #2c68d6;
-      color: #dce3eb; }
-  .form div {
-    position: absolute;
-    bottom: -15px;
-    right: -20px;
-    background: #000;
-    color: white;
-    width: 320px;
-    padding: 16px 4px 16px 0;
-    border-radius: 6px;
-    font-size: 12px;
-    box-shadow: 10px 10px 40px -14px #000; }
-  .form span {
-    margin: 0 15px 15px; }
 
 .footer {
   background-color: #dce3eb;
