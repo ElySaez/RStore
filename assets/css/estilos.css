@@ -262,3 +262,8 @@ header nav a.activo {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px; } }
+
+@media screen and (max-width: 992px) {
+  .card img {
+    margin: auto;
+    width: 350px; } }
